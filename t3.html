@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="t3.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>To-do Web App</h1>
+    </nav>
+    <div class="container">
+        <div class="todo">
+            <div class="content" >
+                <input id="inputTitle" autocomplete="off" value="" type="text" placeholder="Title" required>
+                <textarea  name="" value="" autocomplete="off" placeholder="Description" id="inputDesc" required cols="30" rows="10"></textarea>
+                <button onclick="saveTask()">Save</button>
+            </div>
+        </div>
+        <div class="list">
+            <table >
+                <thead class="heading">
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                        <th>State</th>
+                    </tr>
+                </thead>
+                <tbody id="allList">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="t3.js"></script>
+</body>
+</html>
